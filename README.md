@@ -27,3 +27,12 @@ Few questions waiting answers:
 - what is between %{} 
 - why there is copy what is inside braces also outside it -  without "extern"
 
+### 3. Create python module by SWIG
+
+It uses example interface:
+```shell
+swig -python example.i
+```
+
+
+
