@@ -34,5 +34,23 @@ It uses example interface:
 swig -python example.i
 ```
 
+### 4. Compile all 
+
+```shell
+gcc -c example.c example_wrap.c \
+-I/usr/local/include/python2.8
+```
+
+or in mac after update to latest python (brew install python)
+```shell
+ gcc -c example.c example_wrap.c \                                                                                                                                                                                  (main*) 18:31:53
+    -I/usr/local/Cellar/python@3.9/3.9.2_1/Frameworks/Python.framework/Versions/3.9/include/python3.9/
+```
+
+this will create 2 o files:
+ - example.o
+ - example_wrap.o
+
+
 
 
